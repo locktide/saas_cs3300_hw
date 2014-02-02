@@ -1,44 +1,42 @@
-module FunWithStrings
-  def count_words
-=begin   
-words = self.gsub!(/(\w|\s)/).to_s.split(' ')
-    #words = words.map!{ |word| word.gsub(/\W/).to_s}
-    puts words.class
-		hash_temp = Hash.new(0)
-		words.each { |word| hash_temp[word.downcase] +=1 }
-    return hash_temp
-=end  
 
-    words = self.gsub(/(\W)/, " ").to_s.strip.split(" ")
-    #puts words.to_s
-    #words.each {|word| [word.gsub(/\W/)]}
-    #puts words.to_s
-		hash_temp = Hash.new(0)
-		words.each { |word| hash_temp[word.downcase] +=1 }
-    return hash_temp
-  end
+class Class
   
-  def anagram_groups 
-    anagrams={}
-    words = self.split(" ")
-    words.each do |word|
-      anagrams[word.downcase.split('').sort.join] ||=[]
-      anagrams[word.downcase.split('').sort.join] << word 
-    end
-    anagrams.values
-  end
+  def attr_accessor_with_history(attr_name)
+    attr_name = attr_name.to_s # make sure it's a string
+    #attr_reader attr_name # create the attribute's getter
+    #attr_reader attr_name+"_history" # create bar_history getter
     
+    attr_accessor attr_name # create the attribute's setter
+    attr_accessor attr_name+"_history" # create bar_history setter
+    
+    class_eval %Q{
+      def #{attr_name}=(val)
+       
+			if(!defined?(@#{attr_name}_history))
+				@#{attr_name}_history = [@#{attr_name}]
+			end
+
+			@#{attr_name} = val
+			@#{attr_name}_history << val
+      end
+    }
+  end
 end
 
-class String 
-  include FunWithStrings
-  
+class Foo
+  attr_accessor_with_history :bar
 end
-  
-#puts "A man, a plan, a canal -- Panama!".count_words
-puts "x".anagram_groups
 
+f = Foo.new # => #<Foo:0x127e678>
+f.bar = 3 # => 3
+f.bar = :wowzo # => :wowzo
+f.bar = 'boo!' # => 'boo!'
+puts f.bar_history # => [nil, 3, :wowzo, 'boo!']
 
+f = Foo.new
+f.bar = 1
+f.bar = 2
+puts f.bar_history # => if your code works, should be [nil,1,2]
 
 
 

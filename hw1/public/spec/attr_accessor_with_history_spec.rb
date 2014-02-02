@@ -4,11 +4,11 @@ require 'debugger'
 class TestClass1
   attr_accessor_with_history :foo
 end
-class TestClass2
+class TestClass2 
   attr_accessor_with_history 'foo'
 end
 
-describe '#attr_accessor_with_history', :pending => true do
+describe '#attr_accessor_with_history' do
   shared_examples 'all cases' do
     it 'should define getter and setter' do
       @subject.foo = 'xyz'
