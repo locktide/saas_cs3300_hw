@@ -1,45 +1,94 @@
-module FunWithStrings
-  def count_words
-=begin   
-words = self.gsub!(/(\w|\s)/).to_s.split(' ')
-    #words = words.map!{ |word| word.gsub(/\W/).to_s}
-    puts words.class
-		hash_temp = Hash.new(0)
-		words.each { |word| hash_temp[word.downcase] +=1 }
-    return hash_temp
-=end  
 
-    words = self.gsub(/(\W)/, " ").to_s.strip.split(" ")
-    #puts words.to_s
-    #words.each {|word| [word.gsub(/\W/)]}
-    #puts words.to_s
-		hash_temp = Hash.new(0)
-		words.each { |word| hash_temp[word.downcase] +=1 }
-    return hash_temp
-  end
+
+require 'debugger'              # optional, may be helpful
+require 'open-uri'              # allows open('http://...') to return body
+require 'cgi'                   # for escaping URIs
+require 'nokogiri'              # XML parser
+require 'active_model'          # for validations
+
+class OracleOfBacon
+
+  class InvalidError < RuntimeError ; end
+  class NetworkError < RuntimeError ; end
+  class InvalidKeyError < RuntimeError ; end
+
+  attr_accessor :from, :to
+  attr_reader :api_key, :response, :uri
   
-  def anagram_groups 
-    anagrams={}
-    words = self.split(" ")
-    words.each do |word|
-      anagrams[word.downcase.split('').sort.join] ||=[]
-      anagrams[word.downcase.split('').sort.join] << word 
+  include ActiveModel::Validations
+  validates_presence_of :from
+  validates_presence_of :to
+  validates_presence_of :api_key
+  validate :from_does_not_equal_to
+	 
+
+  def from_does_not_equal_to
+    errors.add(:to, "Must have different To and Froms") unless
+    	@to != @from
+    puts "in def from_does..."
+    puts @from 
+    puts @to
+     
+  end
+
+  def initialize(api_key='')
+ 		if @from == nil then @from = 'Kevin Bacon' end	
+		if @to == nil then @to = @from end
+		
+		puts @to
+		puts @from
+  end
+
+  def find_connections
+    make_uri_from_arguments
+    begin
+      xml = URI.parse(uri).read
+    rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
+      Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError,
+      Net::ProtocolError => e
+      # convert all of these into a generic OracleOfBacon::NetworkError,
+      #  but keep the original error message
+      # your code here
     end
-    anagrams.values
+    # your code here: create the OracleOfBacon::Response object
   end
-    
+
+  def make_uri_from_arguments
+    # your code here: set the @uri attribute to properly-escaped URI
+    #   constructed from the @from, @to, @api_key arguments
+  end
+      
+  class Response
+    attr_reader :type, :data
+    # create a Response object from a string of XML markup.
+    def initialize(xml)
+      @doc = Nokogiri::XML(xml)
+      parse_response
+    end
+
+    private
+
+    def parse_response
+      if ! @doc.xpath('/error').empty?
+        parse_error_response
+      # your code here: 'elsif' clauses to handle other responses
+      # for responses not matching the 3 basic types, the Response
+      # object should have type 'unknown' and data 'unknown response'         
+      end
+    end
+    def parse_error_response
+      @type = :error
+      @data = 'Unauthorized access'
+    end
+  end
 end
 
-class String 
-  include FunWithStrings
-  
-end
-  
-#puts "A man, a plan, a canal -- Panama!".count_words
-puts "x".anagram_groups
 
+falcon = OracleOfBacon.new()
+falcon.to = 'Carrie Fisher'
+falcon.from = 'Carrie Fisher'
 
-
-
-
-
+puts falcon.to
+puts falcon.from
+falcon.from_does_not_equal_to
+puts falcon.errors.full_messages
