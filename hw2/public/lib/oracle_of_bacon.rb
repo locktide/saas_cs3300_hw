@@ -1,4 +1,3 @@
-
 require 'debugger'              # optional, may be helpful
 require 'open-uri'              # allows open('http://...') to return body
 require 'cgi'                   # for escaping URIs
@@ -19,23 +18,33 @@ class OracleOfBacon
   validates_presence_of :to
   validates_presence_of :api_key
   validate :from_does_not_equal_to
-	 
 
   def from_does_not_equal_to
-    errors.add(:to, "Must have different To and Froms") unless
-    	@to != @from
-    puts "in def from_does..."
-    puts @from 
-    puts @to
-     
+		puts "def from_does_not..." 
+		puts @from
+		puts @to 
+
+  	errors.add(:to, "From cannot be the same as To") unless
+    	:to != :from
+=begin		
+		validates_each @from, @to do | record, attr, value |
+			records.error.add attr, 'both specified can not be same' if @to 				== @from
+			end    
+=end
   end
 
   def initialize(api_key='')
- 		if @from == nil then @from = 'Kevin Bacon' end	
+		#if :from.valid? then @from = :from else @from = 'Kevin Bacon' end
+			  	
+		#@from = 'Kevin Bacon'
+		#@to = @from
+		if @from == nil then @from = 'Kevin Bacon' end	
 		if @to == nil then @to = @from end
 		
-		puts @to
-		puts @from
+		#puts @from
+		#puts :from.methods
+		
+		#puts @to
   end
 
   def find_connections
@@ -82,12 +91,3 @@ class OracleOfBacon
   end
 end
 
-
-falcon = OracleOfBacon.new()
-falcon.to = 'Carrie Fisher'
-falcon.from = 'Carrie Fisher'
-
-puts falcon.to
-puts falcon.from
-falcon.from_does_not_equal_to
-puts falcon.errors.full_messages
