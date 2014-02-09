@@ -100,6 +100,7 @@ When you've done the above steps correctly, all the specs in describe 'instance'
 git status (Make sure the files you changed are being updated and are staged for commit!)
 git commit (Give a meaningful message)
 git push (Push all changes and the commit message to the repository)
+
 Part 2: Parsing XML responses
 
 We define a separate class, OracleOfBacon::Response, to hold a response from the service. This class exposes the type and data attributes to the caller, as the examples above showed. "Nesting" one class definition inside another is often done when the nested class (Response) is rarely used separately from the enclosing class (OracleOfBacon).
@@ -128,6 +129,7 @@ What does the keyword private do (right after the constructor) and why did we us
 git status (Make sure the files you changed are being updated and are staged for commit!)
 git commit (Give a meaningful message)
 git push (Push all changes and the commit message to the repository)
+
 Part 3: Constructing the URI
 
 We know what the URI has to look like, but the URI rules (warning: they are boring to read) stipulate that special characters in URIs such as # or spaces must be 'escaped'. Happily, Ruby's standard library provides CGI.escape(string) to help us do this.
@@ -136,6 +138,7 @@ At the end of this part, the specs under describe 'constructing URI' should pass
 git status (Make sure the files you changed are being updated and are staged for commit!)
 git commit (Give a meaningful message)
 git push (Push all changes and the commit message to the repository)
+
 Part 4: Connecting to the Service
 
 And now the moment we've all been waiting for: connecting to the actual Oracle Of Bacon service!!!
@@ -166,4 +169,4 @@ You will submit your files in two ways:
 2) Blackboard
 Make sure that github contains all of your commits and updated files.  We will grade your assignment from github based on your time of commit.  If there’s a problem with the files you upload to github, notify us in your submission note on Blackboard, and we will use that instead.
 Blackboard submission (backup): oracle_of_bacon.rb   You should submit 1 file in total with your assignment.  
-ヿ␊ヿ␊ヿ␊䋿㘠⏿ሌ擿⤳濿ⴺ烿ⴻ烿ⴻ烿ⴻ烿ⴻ濿ⴺ㏿᠕䷿似蟿浩瓿祢藿罬蟿荰菿潥毿桔㫿⠒䃿㴡旿坅糿牧泿幋䏿㸤姿䘹珿楚ㇿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊䋿㘡ヿ␊ヿ␊ヿ␊ヿ␊ヿ␊⇿儼⇿䔶ヿ␊⿿┋⯿㜝⟿㬧⓿䄮᷿塌⃿刾
+
