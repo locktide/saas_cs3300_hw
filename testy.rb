@@ -1,5 +1,4 @@
 
-
 require 'debugger'              # optional, may be helpful
 require 'open-uri'              # allows open('http://...') to return body
 require 'cgi'                   # for escaping URIs
@@ -23,8 +22,17 @@ class OracleOfBacon
 	 
 
   def from_does_not_equal_to
-    errors.add(:to, "Must have different To and Froms") unless
+    errors.add(:base, "Must have different To and Froms") unless
     	@to != @from
+		
+	
+=begin
+		if @to == @from	
+			return 'should_not be_valid' 
+		else
+			return 'should be_valid'
+	end
+=end
     puts "in def from_does..."
     puts @from 
     puts @to
@@ -33,7 +41,7 @@ class OracleOfBacon
 
   def initialize(api_key='')
  		if @from == nil then @from = 'Kevin Bacon' end	
-		if @to == nil then @to = @from end
+		if @to == nil then @to = 'Kevin Bacon' end
 		
 		puts @to
 		puts @from

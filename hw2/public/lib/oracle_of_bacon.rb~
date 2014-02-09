@@ -20,6 +20,7 @@ class OracleOfBacon
   validate :from_does_not_equal_to
 
   def from_does_not_equal_to
+<<<<<<< HEAD
 	puts "def from_does_not..." 
 	puts @from
 	puts @to 
@@ -35,16 +36,31 @@ class OracleOfBacon
 
   def initialize(api_key='')
 		#if :from.valid? then @from = :from else @from = 'Kevin Bacon' end
+=======
+
+  	#errors.add(:to, 'From cannot be the same as To') unless @to != @from 
+		
+  end
+
+  def initialize(api_key='')
+>>>>>>> 9a3b0167c1d3a71c98657320c9a02724d77d6b23
 			  	
 		#@from = 'Kevin Bacon'
 		#@to = @from
 		if @from == nil then @from = 'Kevin Bacon' end	
+<<<<<<< HEAD
 		if @to == nil then @to = @from end
 		
 		#puts @from
 		#puts :from.methods
 		
 		#puts @to
+=======
+		if @to == nil then @to = 'Kevin Bacon' end
+		
+		@api_key = '38b99cd9ec87' if @api_key == nil
+		
+>>>>>>> 9a3b0167c1d3a71c98657320c9a02724d77d6b23
   end
 
   def find_connections

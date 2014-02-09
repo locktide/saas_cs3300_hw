@@ -20,11 +20,11 @@ class RockPaperScissors
   end
 
   def self.tournament_winner(tournament)
-    if(tournament[0][0].is_a? String)
+    if(tournament[0].is_a? String and tournament[1].is_a? String)
      champ = winner(tournament)
     else
       tournament_winner(
-        [tournament_winner(tournament[0]),tournament_winner(tournament[1])]
+        tournament_winner(tournament[0]),tournament_winner(tournament[1])
       )
     end
     return champ
