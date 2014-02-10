@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9a3b0167c1d3a71c98657320c9a02724d77d6b23
 require 'debugger'              # optional, may be helpful
 require 'open-uri'              # allows open('http://...') to return body
 require 'cgi'                   # for escaping URIs
@@ -24,6 +28,8 @@ class OracleOfBacon
   def from_does_not_equal_to
     errors.add(:to, "Must have different To and Froms") unless
     	@to != @from
+<<<<<<< HEAD
+=======
 		
 	self.valid?
 =begin
@@ -33,6 +39,7 @@ class OracleOfBacon
 			return 'should be_valid'
 	end
 =end
+>>>>>>> 9a3b0167c1d3a71c98657320c9a02724d77d6b23
     puts "in def from_does..."
     puts @from 
     puts @to
@@ -41,7 +48,11 @@ class OracleOfBacon
 
   def initialize(api_key='')
  		if @from == nil then @from = 'Kevin Bacon' end	
+<<<<<<< HEAD
+		if @to == nil then @to = @from end
+=======
 		if @to == nil then @to = 'Kevin Bacon' end
+>>>>>>> 9a3b0167c1d3a71c98657320c9a02724d77d6b23
 		
 		puts @to
 		puts @from
@@ -98,5 +109,9 @@ falcon.from = 'Carrie Fisher'
 
 puts falcon.to
 puts falcon.from
+<<<<<<< HEAD
+falcon.validate
+=======
 falcon.from_does_not_equal_to
+>>>>>>> 9a3b0167c1d3a71c98657320c9a02724d77d6b23
 puts falcon.errors.full_messages
