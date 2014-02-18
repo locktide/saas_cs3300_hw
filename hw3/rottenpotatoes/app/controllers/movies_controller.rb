@@ -22,6 +22,7 @@ class MoviesController < ApplicationController
       
       end
 
+    #This will allow the system to bring up the entire movie hash or if no ratings are selected choose all. 
     @all_ratings = Movie.all_ratings
     @selected_ratings = params[:ratings] || session[:ratings] || {}
     
