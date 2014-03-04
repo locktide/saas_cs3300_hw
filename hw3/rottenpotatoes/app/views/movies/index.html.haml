@@ -8,6 +8,7 @@
   - @all_ratings.each do |rating|
     = rating
     = check_box_tag "ratings[#{rating}]", 1, @selected_ratings.include?(rating)
+    -#sends link to refresh with desired movie MPAA ratings to display
   = submit_tag 'Refresh', :id => 'ratings_submit'
 
 %table#movies
