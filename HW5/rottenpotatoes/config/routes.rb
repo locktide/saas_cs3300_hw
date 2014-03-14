@@ -16,6 +16,9 @@ Rottenpotatoes::Application.routes.draw do
 
   # map '/' to be a redirect to '/movies'
   root :to => redirect('/movies')
+  
+  #This will be my route for 
+  #get 'movies/:id/same_director' => 'movies#same_director', :as => :same_director
 
   # Sample resource route with options:
   #   resources :products do
