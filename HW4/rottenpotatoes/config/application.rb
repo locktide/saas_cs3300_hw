@@ -52,6 +52,10 @@ module Rottenpotatoes
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+<<<<<<< HEAD
 		config.assets.initialize_on_precompile = false
+=======
+    config.assets.initialize_on_precompile = false
+>>>>>>> 7cfccc4916f3c7e8f43ea31cb10641dc1ed8eded
   end
 end
