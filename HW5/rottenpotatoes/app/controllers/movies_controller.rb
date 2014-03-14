@@ -14,6 +14,13 @@ class MoviesController < ApplicationController
     when 'release_date'
       ordering,@date_header = {:order => :release_date}, 'hilite'
     end
+=begin    
+    when 'director'
+      ordering,@date_header = {:order => :director}, 'hilite'
+    end
+=end
+    #@movie.director
+
     @all_ratings = Movie.all_ratings
     @selected_ratings = params[:ratings] || session[:ratings] || {}
     

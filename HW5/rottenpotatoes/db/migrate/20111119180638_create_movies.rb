@@ -11,9 +11,15 @@ class CreateMovies < ActiveRecord::Migration
       # of when movies are added or modified:
       t.timestamps
     end
+=begin
+    add_column :director, default: true 
   end
-
+  def change
+    add_column :movies, :director, :string
+  end
+=end
   def down
     drop_table :movies
+    remove_column :director
   end
 end
