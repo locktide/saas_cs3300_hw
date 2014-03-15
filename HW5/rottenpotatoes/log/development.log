@@ -2034,3 +2034,2169 @@ ActionView::Template::Error (undefined method `same_director_path' for #<#<Class
   Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
   Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
   Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+Connecting to database specified by database.yml
+  [1m[36m (2.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20111119180638)
+Migrating to AddDirectorToMovies (20140313235027)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-03-15 07:23:44 -0600
+Connecting to database specified by database.yml
+
+SyntaxError (/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/controllers/movies_controller.rb:77: syntax error, unexpected $end, expecting keyword_end):
+  activesupport (3.2.14) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.14) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.14) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.14) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.14) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.14) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.14) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__88373733__call__847129667__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.9ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-03-15 07:26:05 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (41.3ms)
+Completed 500 Internal Server Error in 51ms
+
+ActionView::Template::Error (undefined method `same_director_path' for #<#<Class:0xb56bc988>:0xb56bb330>):
+    18: %p#description= @movie.description
+    19: 
+    20: -#add link to find similar directors as this movie
+    21: = link_to 'Find Movies With Same Director', same_director_path(@movie) 
+    22: = link_to 'Edit', edit_movie_path(@movie)
+    23: = button_to 'Delete', movie_path(@movie), :method => :delete, :confirm => 'Are you sure?'
+    24: = link_to 'Back to movie list', movies_path
+  app/views/movies/show.html.haml:21:in `_app_views_movies_show_html_haml___738030664__625618118'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-03-15 07:29:41 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 43ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 07:29:41 -0600
+Served asset /application.css - 200 OK (32ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 07:29:41 -0600
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 07:29:41 -0600
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 07:29:41 -0600
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 07:29:43 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/same_director.html.haml within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3: %h2 Movies with same Director
+    4: 
+    5: %ul#related_movies
+    6:   - @movies.each do |movie|
+    7:     %li
+    8:       = movie.title
+    9: 
+  app/views/movies/same_director.html.haml:6:in `_app_views_movies_same_director_html_haml___694175708__625312038'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-03-15 07:44:18 -0600
+Processing by MoviesController#index as HTML
+Redirected to http://0.0.0.0:3000/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.0.0.1 at 2014-03-15 07:44:18 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 26ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 07:44:18 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 07:44:18 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 07:44:18 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 07:44:18 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-03-15 07:44:20 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 07:44:20 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 07:44:20 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 07:44:20 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 07:44:20 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 07:44:22 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/same_director.html.haml within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3: %h2 Movies with same Director
+    4: 
+    5: %ul#related_movies
+    6:   - @movies.each do |movie|
+    7:     %li
+    8:       = movie.title
+    9: 
+  app/views/movies/same_director.html.haml:6:in `_app_views_movies_same_director_html_haml___694175708__625312038'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20111119180638)
+Migrating to AddDirectorToMovies (20140313235027)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 07:54:37 -0600
+Connecting to database specified by database.yml
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/same_director.html.haml within layouts/application (58.0ms)
+Completed 500 Internal Server Error in 110ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3: %h2 Movies with same Director
+    4: 
+    5: %ul#related_movies
+    6:   - @movies.each do |movie|
+    7:     %li
+    8:       = movie.title
+    9: 
+  app/views/movies/same_director.html.haml:6:in `_app_views_movies_same_director_html_haml__793633091__626196248'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/movies/1/edit" for 127.0.0.1 at 2014-03-15 07:54:42 -0600
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/edit.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 35ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 07:54:42 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:42 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:42 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:42 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started PUT "/movies/1" for 127.0.0.1 at 2014-03-15 07:54:46 -0600
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZqdsZVauaYYZQWWXNdywfMBK+WboSgwxUWP2CjqLzlY=", "movie"=>{"title"=>"Aladdin", "rating"=>"G", "release_date(1i)"=>"1992", "release_date(2i)"=>"11", "release_date(3i)"=>"25", "director"=>"walt disney"}, "commit"=>"Update Movie Info", "id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/movies/1
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-03-15 07:54:46 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 07:54:46 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:46 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:46 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:46 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-03-15 07:54:48 -0600
+Processing by MoviesController#index as HTML
+Redirected to http://0.0.0.0:3000/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.0.0.1 at 2014-03-15 07:54:48 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 25ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 07:54:48 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:48 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:48 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:48 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BNC-17%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.0.0.1 at 2014-03-15 07:54:51 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "NC-17"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 07:54:51 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:51 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:51 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:51 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-03-15 07:54:53 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 07:54:53 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:53 -0600
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:53 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 07:54:53 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 07:54:56 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/same_director.html.haml within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3: %h2 Movies with same Director
+    4: 
+    5: %ul#related_movies
+    6:   - @movies.each do |movie|
+    7:     %li
+    8:       = movie.title
+    9: 
+  app/views/movies/same_director.html.haml:6:in `_app_views_movies_same_director_html_haml__793633091__626196248'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20111119180638)
+Migrating to AddDirectorToMovies (20140313235027)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 08:03:38 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/same_director.html.haml within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3: %h2 Movies with same Director
+    4: 
+    5: %ul#related_movies
+    6:   - @movies.each do |movie|
+    7:     %li
+    8:       = movie.title
+    9: 
+  app/views/movies/same_director.html.haml:6:in `_app_views_movies_same_director_html_haml__793633091__626196248'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-03-15 08:13:43 -0600
+Processing by MoviesController#index as HTML
+Redirected to http://0.0.0.0:3000/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.0.0.1 at 2014-03-15 08:13:43 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (3.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 36ms (Views: 21.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:13:43 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:13:43 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:13:43 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:13:43 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2014-03-15 08:13:45 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered movies/show.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:13:45 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:13:45 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:13:45 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:13:45 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies/2/same_director" for 127.0.0.1 at 2014-03-15 08:13:48 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"2"}
+  Rendered movies/same_director.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3: %h2 Related movies by director
+    4: 
+    5: %ul#related_movies
+    6:   - @movies.each do |movie|
+    7:     %li
+    8:       = movie.title
+    9: 
+  app/views/movies/same_director.html.haml:6:in `_app_views_movies_same_director_html_haml__793633091__634125348'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/movies/2/same_director" for 127.0.0.1 at 2014-03-15 08:14:27 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"2"}
+  Rendered movies/same_director.html.haml within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: %h2 Related movies by director
+    5: 
+    6: %ul#related_movies
+    7:   - @movies.each do |movie|
+    8:     %li
+    9:       = movie.title
+    10: 
+  app/views/movies/same_director.html.haml:7:in `_app_views_movies_same_director_html_haml__793633091__633602168'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/movies/2/same_director" for 127.0.0.1 at 2014-03-15 08:18:07 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"2"}
+  Rendered movies/same_director.html.haml within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: %h2 Related movies by director
+    5: 
+    6: %ul#related_movies
+    7:   - @movies.each do |movie|
+    8:     %li
+    9:       = movie.title
+    10: 
+  app/views/movies/same_director.html.haml:7:in `_app_views_movies_same_director_html_haml__793633091__633602168'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/movies/2/same_director" for 127.0.0.1 at 2014-03-15 08:18:39 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"2"}
+ERROR: compiling _app_views_movies_same_director_html_haml__793633091__625915878 RAISED /home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+ @movies each do |movie|
+             ^
+Function body:           def _app_views_movies_same_director_html_haml__793633091__625915878(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/same_director";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true, :hyphenate_data_attrs=>true, :cdata=>false});_erbout = _hamlout.buffer;@output_buffer = output_buffer ||= ActionView::OutputBuffer.new rescue nil;;_hamlout.push_text("<h2>Related movies by director</h2>\n<ul id='related_movies'>\n", 1, false);
+
+
+
+
+
+ @movies each do |movie|
+_hamlout.push_text("  <li>\n    #{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_false_false_true_false_true_false(( movie.title
+));}\n  </li>\n", -1, false);end;_hamlout.push_text("</ul>\n#{_hamlout.adjust_tabs(-1); 
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Back to movie list', movies_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `module_eval'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `compile'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:232:in `compile!'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:144:in `block in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:125:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:143:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:19:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:88:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:167:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:414:in `_run__1015862321__process_action__468104394__callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:121:in `process'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:45:in `process'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal.rb:203:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal.rb:246:in `block in action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/query_cache.rb:64:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `_run__397743427__call__933149815__callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:32:in `call_app'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/static.rb:63:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/engine.rb:484:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/application.rb:231:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered movies/same_director.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+ @movies each do |movie|
+             ^):
+    4: %h2 Related movies by director
+    5: 
+    6: %ul#related_movies
+    7:   - @movies each do |movie|
+    8:     %li
+    9:       = movie.title
+    10: 
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.14) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.14) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.14) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.14) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.14) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:19:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.14) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:414:in `_run__1015862321__process_action__468104394__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.14) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.14) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.14) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__397743427__call__933149815__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/movies/2/same_director" for 127.0.0.1 at 2014-03-15 08:19:07 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"2"}
+ERROR: compiling _app_views_movies_same_director_html_haml__793633091__626314368 RAISED /home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+ @movies each |movie|
+             ^
+/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:13: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_movies_same_director_html_haml__793633091__626314368(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/same_director";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true, :hyphenate_data_attrs=>true, :cdata=>false});_erbout = _hamlout.buffer;@output_buffer = output_buffer ||= ActionView::OutputBuffer.new rescue nil;;_hamlout.push_text("<h2>Related movies by director</h2>\n<ul id='related_movies'>\n", 1, false);
+
+
+
+
+
+ @movies each |movie|
+_hamlout.push_text("  <li>\n    #{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_false_false_true_false_true_false(( movie.title
+));}\n  </li>\n", -1, false);end;_hamlout.push_text("</ul>\n#{_hamlout.adjust_tabs(-1); 
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Back to movie list', movies_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `module_eval'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `compile'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:232:in `compile!'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:144:in `block in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:125:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:143:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:19:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:88:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:167:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:414:in `_run__1015862321__process_action__468104394__callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:121:in `process'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:45:in `process'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal.rb:203:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal.rb:246:in `block in action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/query_cache.rb:64:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `_run__397743427__call__933149815__callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:32:in `call_app'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/static.rb:63:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/engine.rb:484:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/application.rb:231:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered movies/same_director.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+ @movies each |movie|
+             ^
+/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:13: syntax error, unexpected keyword_ensure, expecting $end):
+    4: %h2 Related movies by director
+    5: 
+    6: %ul#related_movies
+    7:   - @movies each |movie|
+    8:     %li
+    9:       = movie.title
+    10: 
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.14) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.14) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.14) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.14) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.14) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:19:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.14) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:414:in `_run__1015862321__process_action__468104394__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.14) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.14) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.14) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__397743427__call__933149815__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/movies/2/same_director" for 127.0.0.1 at 2014-03-15 08:19:30 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"2"}
+  Rendered movies/same_director.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: %h2 Related movies by director
+    5: 
+    6: %ul#related_movies
+    7:   - @movies.each do |movie|
+    8:     %li
+    9:       = movie.title
+    10: 
+  app/views/movies/same_director.html.haml:7:in `_app_views_movies_same_director_html_haml__793633091__629962758'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/movies/2/same_director" for 127.0.0.1 at 2014-03-15 08:24:16 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"2"}
+  Rendered movies/same_director.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:24:16 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:16 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:16 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:16 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-03-15 08:24:21 -0600
+Processing by MoviesController#index as HTML
+Redirected to http://0.0.0.0:3000/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.0.0.1 at 2014-03-15 08:24:21 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:24:21 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:21 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:21 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:21 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-03-15 08:24:23 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:24:23 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:23 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:23 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:23 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 08:24:25 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/same_director.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:24:25 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:25 -0600
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:25 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:25 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-03-15 08:24:28 -0600
+Processing by MoviesController#index as HTML
+Redirected to http://0.0.0.0:3000/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.0.0.1 at 2014-03-15 08:24:28 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (20.2ms)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:24:28 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:28 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:28 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-03-15 08:24:41 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:24:41 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:41 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:41 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:24:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 08:24:42 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+ERROR: compiling _app_views_movies_same_director_html_haml__793633091__620561808 RAISED /home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:13: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:16: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_movies_same_director_html_haml__793633091__620561808(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/same_director";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true, :hyphenate_data_attrs=>true, :cdata=>false});_erbout = _hamlout.buffer;@output_buffer = output_buffer ||= ActionView::OutputBuffer.new rescue nil;;_hamlout.push_text("<h2>Related movies by director</h2>\n<ul id='related_movies'>\n", 1, false);
+
+
+
+
+
+ for movie in @movies
+_hamlout.push_text("</ul>\n#{_hamlout.adjust_tabs(-1); 
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Back to movie list', movies_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `module_eval'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `compile'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:232:in `compile!'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:144:in `block in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:125:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:143:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:19:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:88:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:167:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:414:in `_run__1015862321__process_action__468104394__callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:121:in `process'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:45:in `process'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal.rb:203:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal.rb:246:in `block in action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/query_cache.rb:64:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `_run__397743427__call__933149815__callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:32:in `call_app'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/static.rb:63:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/engine.rb:484:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/application.rb:231:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered movies/same_director.html.haml within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:13: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:16: syntax error, unexpected $end, expecting keyword_end):
+    10:       = movie.title
+    11: 
+    12: = link_to 'Back to movie list', movies_path
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.14) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.14) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.14) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.14) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.14) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:19:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.14) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:414:in `_run__1015862321__process_action__468104394__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.14) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.14) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.14) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__397743427__call__933149815__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 08:26:16 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+ERROR: compiling _app_views_movies_same_director_html_haml__793633091__632753978 RAISED /home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:14: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:17: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_movies_same_director_html_haml__793633091__632753978(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/same_director";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true, :hyphenate_data_attrs=>true, :cdata=>false});_erbout = _hamlout.buffer;@output_buffer = output_buffer ||= ActionView::OutputBuffer.new rescue nil;;_hamlout.push_text("<h2>Related movies by director</h2>\n<ul id='related_movies'>\n", 1, false);
+
+
+
+
+
+ for movie in @movies
+_hamlout.push_text("</ul>\n#{_hamlout.adjust_tabs(-1); 
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Back to movie list', movies_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `module_eval'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `compile'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:232:in `compile!'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:144:in `block in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:125:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:143:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:19:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:88:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:167:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:414:in `_run__1015862321__process_action__468104394__callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:121:in `process'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:45:in `process'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal.rb:203:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal.rb:246:in `block in action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/query_cache.rb:64:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `_run__397743427__call__933149815__callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:32:in `call_app'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/static.rb:63:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/engine.rb:484:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/application.rb:231:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered movies/same_director.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:14: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:17: syntax error, unexpected $end, expecting keyword_end):
+    11:   - end 
+    12: 
+    13: = link_to 'Back to movie list', movies_path
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.14) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.14) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.14) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.14) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.14) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:19:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.14) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:414:in `_run__1015862321__process_action__468104394__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.14) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.14) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.14) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__397743427__call__933149815__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-03-15 08:26:19 -0600
+Processing by MoviesController#index as HTML
+Redirected to http://0.0.0.0:3000/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.0.0.1 at 2014-03-15 08:26:19 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 22ms (Views: 17.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:26:19 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:26:19 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:26:19 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:26:19 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-03-15 08:26:20 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (1.0ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:26:20 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:26:20 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:26:20 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:26:20 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 08:26:21 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+ERROR: compiling _app_views_movies_same_director_html_haml__793633091__632753978 RAISED /home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:14: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:17: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_movies_same_director_html_haml__793633091__632753978(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/same_director";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true, :hyphenate_data_attrs=>true, :cdata=>false});_erbout = _hamlout.buffer;@output_buffer = output_buffer ||= ActionView::OutputBuffer.new rescue nil;;_hamlout.push_text("<h2>Related movies by director</h2>\n<ul id='related_movies'>\n", 1, false);
+
+
+
+
+
+ for movie in @movies
+_hamlout.push_text("</ul>\n#{_hamlout.adjust_tabs(-1); 
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Back to movie list', movies_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `module_eval'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:297:in `compile'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:232:in `compile!'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:144:in `block in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:125:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/template.rb:143:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/template_renderer.rb:19:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:88:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:167:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:414:in `_run__1015862321__process_action__468104394__callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/notifications.rb:123:in `instrument'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/base.rb:121:in `process'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/abstract_controller/rendering.rb:45:in `process'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal.rb:203:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_controller/metal.rb:246:in `block in action'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/routing/route_set.rb:608:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/query_cache.rb:64:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-3.2.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `_run__397743427__call__933149815__callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:32:in `call_app'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `block in call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/logger.rb:16:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-3.2.14/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/static.rb:63:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/engine.rb:484:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/application.rb:231:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/railties-3.2.14/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/michael/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered movies/same_director.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:14: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/michael/Desktop/saas_hw/HW5/rottenpotatoes/app/views/movies/same_director.html.haml:17: syntax error, unexpected $end, expecting keyword_end):
+    11:   - end 
+    12: 
+    13: = link_to 'Back to movie list', movies_path
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.14) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.14) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.14) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.14) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.14) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.14) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:48:in `block (2 levels) in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:47:in `block in render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:55:in `render_with_layout'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:19:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.14) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:414:in `_run__1015862321__process_action__468104394__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.14) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.14) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.14) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.14) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__397743427__call__933149815__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/michael/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 08:28:59 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/same_director.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    5: 
+    6: %ul#related_movies
+    7:   -#- for movie in @movies
+    8:   - @movies.each do |movie|
+    9:     %li
+    10:       = movie.title
+    11: 
+  app/views/movies/same_director.html.haml:8:in `_app_views_movies_same_director_html_haml__793633091__623229518'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 08:30:11 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/same_director.html.haml within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    5: 
+    6: %ul#related_movies
+    7:   -#- for movie in @movies
+    8:   - @movies.each do |movie|
+    9:     %li
+    10:       = movie.title
+    11: 
+  app/views/movies/same_director.html.haml:8:in `_app_views_movies_same_director_html_haml__793633091__623229518'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-03-15 08:30:14 -0600
+Processing by MoviesController#index as HTML
+Redirected to http://0.0.0.0:3000/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.0.0.1 at 2014-03-15 08:30:14 -0600
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 33ms (Views: 15.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:30:15 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:30:15 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:30:15 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:30:15 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2014-03-15 08:30:16 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-15 08:30:16 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-15 08:30:16 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-15 08:30:16 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-15 08:30:16 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/movies/1/same_director" for 127.0.0.1 at 2014-03-15 08:30:17 -0600
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/same_director.html.haml within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    5: 
+    6: %ul#related_movies
+    7:   -#- for movie in @movies
+    8:   - @movies.each do |movie|
+    9:     %li
+    10:       = movie.title
+    11: 
+  app/views/movies/same_director.html.haml:8:in `_app_views_movies_same_director_html_haml__793633091__623229518'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)

@@ -71,7 +71,17 @@ class MoviesController < ApplicationController
     redirect_to movies_path
   end
 
+#this is the controller functionality for HW5 and directors
   def director_match
-    
+    @movie = Movie.find(params[:id])
+    director_name = movie.director
+    if not director_name or director_name.empty?
+      flash[:notice] = %Q{'#{movie.title}' was produced with no director}
+      redirect_to movies_path
+    else
+      @movie = Movie.find_all_by_director director_name
+      flash[:notice] = %Q{There are #{@movie.size} movie(s) with #{director_name} as the director}
+    end
+  end
 
 end

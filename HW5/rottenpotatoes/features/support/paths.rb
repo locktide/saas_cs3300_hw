@@ -21,6 +21,7 @@ module NavigationHelpers
     #
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
+
   #this was for the first cucumber test to check if we can add a director to movie
   when /^the edit page for "(.*)"$/
     edit_movie_path Movie.find_by_title($1)
@@ -28,6 +29,10 @@ module NavigationHelpers
 #this is for test to to change path to the "more details" page for a movie 
   when /^the details page for "(.*)"$/
     edit_movie_path Movie.find_by_title($1)
+
+    #test for same director detials in multi movies
+      when /^the Similar Movies page for "(.*)"$/
+       same_director_path Movie.find_by_title($1)
 
     else
       begin
