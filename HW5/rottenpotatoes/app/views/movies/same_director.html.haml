@@ -1,0 +1,13 @@
+-# in app/views/movies/same_director.html.haml
+-# this is new view for extra pane of showin directors
+
+%h2 Related movies by director
+
+%ul#related_movies
+  -#- for movie in @movies
+  - @movies.each do |movie|
+    %li
+      = movie.title
+
+
+= link_to 'Back to movie list', movies_path
